@@ -35,3 +35,11 @@ console.log("\nUsing for in loop: ")
 for (const key in bookDetails) {
     console.log(key, bookDetails[key]);
 }
+
+const arraying = [12,13,15,16,42,25];
+let sum = 0;
+for (let i=0; i<arraying.length; i++) {
+    sum += arraying[i];
+}
+
+console.log(sum);
