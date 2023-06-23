@@ -6,6 +6,11 @@
     color: red;
 }
 
+.textCenterAlign {
+    font-size: 18px;
+    text-align: center;
+}
+
 .blue-bg {
     background-color: blue;
 }
