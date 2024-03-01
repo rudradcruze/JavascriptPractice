@@ -1,3 +1,3 @@
 # javascript_practice
 
-JavScript Practice Repository.
+JavScript Practice.
