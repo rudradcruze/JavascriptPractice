@@ -33,7 +33,7 @@ function validateGuess(guess) {
     prevGuess.push(guess);
     if (numGusses === 10) {
       displayGuess(guess);
-      displayMessage(`Game Over. Random bumber was ${randomNumber}`);
+      displayMessage(`Game Over. Random number was ${randomNumber}`);
       endGame();
     } else {
       displayGuess(guess);
