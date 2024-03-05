@@ -1,13 +1,12 @@
 const user = {
-    username: "hitesh",
+    username: "rudra",
     price: 999,
 
-    welcomeMessage: function() {
+    welcomeMessage: function () {
         console.log(`${this.username} , welcome to website`);
         console.log(this);
-    }
-
-}
+    },
+};
 
 // user.welcomeMessage()
 // user.username = "sam"
@@ -15,25 +14,24 @@ const user = {
 
 // console.log(this);
 
-// function chai(){
-//     let username = "hitesh"
+// function joss(){
+//     let username = "rudra"
 //     console.log(this.username);
 // }
 
-// chai()
+// joss()
 
-// const chai = function () {
-//     let username = "hitesh"
+// const joss = function () {
+//     let username = "rudra"
 //     console.log(this.username);
 // }
 
-const chai =  () => {
-    let username = "hitesh"
+const joss = () => {
+    let username = "rudra";
     console.log(this);
-}
+};
 
-
-// chai()
+// joss()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
@@ -43,11 +41,9 @@ const chai =  () => {
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
-const addTwo = (num1, num2) => ({username: "hitesh"})
+const addTwo = (num1, num2) => ({ username: "rudra" });
 
-
-console.log(addTwo(3, 4))
-
+console.log(addTwo(3, 4));
 
 // const myArray = [2, 5, 3, 7, 8]
 
