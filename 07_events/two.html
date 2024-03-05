@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Learning Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayRudra = function () {
+        console.log("Rudra");
+    }
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "Rudra is Best"
+    }
+
+    let changeMe = null;
+
+    document.getElementById('start').addEventListener('click', function () {
+        changeMe = setTimeout(changeText, 2000);
+    })
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+
+</html>
