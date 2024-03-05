@@ -7,3 +7,4 @@
 3. [Digital Clock](https://rudradcruze.github.io/JavascriptPractice/3-digital-clock)
 4. [Gess The Number](https://rudradcruze.github.io/JavascriptPractice/4-guess-the-number)
 5. [Unlimitted Colors](https://rudradcruze.github.io/JavascriptPractice/5-unlimitted-colors)
+6. [Keyboard Check](https://rudradcruze.github.io/JavascriptPractice/6-keyboard)
