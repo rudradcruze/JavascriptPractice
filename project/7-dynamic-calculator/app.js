@@ -1,13 +1,16 @@
-const history = document.querySelector(".history-component");
+const historyList = document.getElementById("history-component");
 const inputBox = document.querySelector(".display");
 const buttons = document.querySelectorAll(".buttons");
 const speical = ["%", "*", "/", "+", "-"];
+let localHistory = Object.values(localStorage);
 
 let output = "";
 let bracket = 0;
 let bracketChecked = false;
 let elementCheck = false;
 let fontSize = 25;
+
+console.log(history);
 
 function evaluateExpression(expression) {
     const sanitizedExpression = expression.replace("%", "/100");
@@ -62,9 +65,39 @@ function updateFontSize() {
     inputBox.style.fontSize = `${fontSize}px`;
 }
 
+function saveExpression(expression) {
+    const length = localStorage.length + 1;
+    localStorage.setItem(`${length}`, expression);
+}
+
+function showHistory(filteredHistory) {
+    historyList.innerHTML = "";
+
+    if (filteredHistory.length > 0) {
+        for (const item of filteredHistory) {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(item));
+            historyList.appendChild(li);
+        }
+    } else {
+        historyList.innerHTML = `<li style="color: red">Nothing found</li>`;
+    }
+}
+
+function filterHistory(output) {
+    newFilteredHistory = localHistory.filter((element) =>
+        element.includes(output)
+    );
+    showHistory(newFilteredHistory);
+}
+
 function calculation(value) {
     if (value === "=" && output !== "") {
-        output = evaluateExpression(output);
+        result = evaluateExpression(output);
+        if (!isNaN(result)) {
+            saveExpression(`${output}=${result}`);
+            output = result;
+        }
         bracket = 0;
         bracketChecked = false;
         elementCheck = false;
@@ -83,11 +116,10 @@ function calculation(value) {
     }
     inputBox.value = output;
     updateFontSize();
+    filterHistory(output);
 }
 
-function popLastValue() {
-    output = output.slice(0, -1);
-}
+showHistory(localHistory);
 
 buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
