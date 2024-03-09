@@ -10,8 +10,6 @@ let bracketChecked = false;
 let elementCheck = false;
 let fontSize = 25;
 
-console.log(history);
-
 function evaluateExpression(expression) {
     const sanitizedExpression = expression.replace("%", "/100");
     return new Function(`return ${sanitizedExpression}`)();
@@ -68,6 +66,7 @@ function updateFontSize() {
 function saveExpression(expression) {
     const length = localStorage.length + 1;
     localStorage.setItem(`${length}`, expression);
+    localHistory = Object.values(localStorage);
 }
 
 function showHistory(filteredHistory) {
