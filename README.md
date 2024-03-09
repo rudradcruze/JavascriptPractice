@@ -8,3 +8,4 @@
 4. [Gess The Number](https://rudradcruze.github.io/JavascriptPractice/4-guess-the-number)
 5. [Unlimitted Colors](https://rudradcruze.github.io/JavascriptPractice/5-unlimitted-colors)
 6. [Keyboard Check](https://rudradcruze.github.io/JavascriptPractice/6-keyboard)
+7. [Dynamic Claculator](https://rudradcruze.github.io/JavascriptPractice/7-dynamic-calculator)
