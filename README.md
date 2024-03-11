@@ -1,4 +1,4 @@
-# JavScript Projects
+# JavaScript Projects
 
 1. [Color Changer](https://rudradcruze.github.io/javascript/1-color-changer)
 2. [BMI Calculator](https://rudradcruze.github.io/javascript/2-bmi-calculator)
