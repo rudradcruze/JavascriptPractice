@@ -1,0 +1,32 @@
+body {
+        font-family: 'Montserrat', sans-serif;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 60px;
+    color: #31A5AC;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+label {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+
+input {
+    background: #DCDCDC !important;
+    font-weight: 600 !important;
+}
+
+.background {
+    background-color: #F8F8F8 !important;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
