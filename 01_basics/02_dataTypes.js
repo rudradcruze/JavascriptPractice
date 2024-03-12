@@ -1,11 +1,5 @@
 "use strict"; // treat all JS code as newer version
 
-// alert( 3 + 3) // we are using nodejs, not browser
-
-console.log(3 + 3); // code readability should be high
-
-console.log("Rudra");
-
 let name = "Rudra";
 let age = 18;
 let isLoggedIn = false;
@@ -21,5 +15,9 @@ let state;
 
 // object
 
+const mySymbol = Symbol("Rudra");
+
+console.log(mySymbol);
+console.log(typeof mySymbol);
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
